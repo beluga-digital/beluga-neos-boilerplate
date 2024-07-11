@@ -1,0 +1,4 @@
+# enable mutagen sync of the filesystem into the web container
+mutagen_enabled: true
+# enable mounting the filesystem via nfs to avoid docker io performance issues
+nfs_mount_enabled: true

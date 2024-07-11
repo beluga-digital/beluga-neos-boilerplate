@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run FLOW CLI (neos-flow) command inside the web container
+## Usage: flow [args]
+## Example: "ddev flow help"
+
+./flow "${@}"

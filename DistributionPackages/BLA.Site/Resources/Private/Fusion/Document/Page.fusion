@@ -1,0 +1,1 @@
+prototype(BLA.Site:Document.Page) < prototype(BLA.Site:Document.AbstractPage)

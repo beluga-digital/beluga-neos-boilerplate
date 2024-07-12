@@ -21,6 +21,10 @@ prototype(BLA.Site:Document.AbstractPage) < prototype(Neos.Neos:Page) {
     javascripts.site = afx`
         <link type="text/javascript" defer href={StaticResource.uri('BLA.Site', 'Public/site.js')} />
     `
+
+    mainJs = Networkteam.Neos.Vite:Asset {
+      entry = 'Resources/Private/Src/Javascript/Main.js'
+  }
   }
 
   body = BLA.Site:Component.Template.Default {

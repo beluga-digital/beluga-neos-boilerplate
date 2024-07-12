@@ -3,7 +3,8 @@
 /Build/BuildEssentials
 /Build/Reports
 /Build/Resources
-/Configuration/
+/Configuration/Production
+/Configuration/Testing
 /Data/
 /Packages/
 /Web/
@@ -23,4 +24,4 @@ Build/Resources/Java/selenium-server-standalone*
 **/node_modules
 
 # ddev
-.ddev/locks
+.ddev/locks/*.lock

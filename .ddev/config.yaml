@@ -27,7 +27,7 @@ hooks:
     - exec: ./flow doctrine:migrate
     - exec: ./flow flow:cache:flush --force
     - exec: "[[ ! -f ./.ddev/locks/user-created.lock ]] && ./flow user:create --roles Administrator admin admin Admin User && touch  ./.ddev/locks/user-created.lock || echo 'User exists'"
-    - exec: "[[ ! -f  ./.ddev/locks/site-created.lock ]] && ./flow site:create beluga-neos-boilerplate BLA.Site BLA.Site:Document.Home && touch  ./.ddev/locks/site-created.lock || echo 'Site exists'"
+    - exec: "[[ ! -f  ./.ddev/locks/site-created.lock ]] && ./flow site:create beluga-neos-boilerplate BLA.Site BLA.Site:Document.Page && touch  ./.ddev/locks/site-created.lock || echo 'Site exists'"
     - exec: "[[ ! -f  ./.ddev/locks/domain-created.lock ]] && ./flow domain:add beluga-neos-boilerplate beluga-neos-boilerplate.ddev.site && touch  ./.ddev/locks/domain-created.lock || echo 'Domain exists'"
     - exec: ./flow resource:publish
     - exec: pnpm build
